@@ -1,0 +1,430 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f1b24;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  height: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  user-select: none;
+}
+.logo:hover {
+  transform: scale(1.2);
+}
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-button {
+  background-color: #bb86fc;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #cc00d3;
+  transform: translateY(-2px);
+}
+
+.slide-container {
+  position: relative;
+  max-width: 100%;
+  height: 500px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.slide {
+  height: 500px;
+  width: 100%;
+}
+
+.slide.active {
+  display: flex;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.slide-text {
+  position: relative;
+  color: white;
+  padding: 10px 20px;
+  font-size: 50px;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 30%;
+  transition: 0.3s;
+  user-select: none;
+}
+
+.prev {
+  left: 15px;
+}
+
+.next {
+  right: 15px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #bb86fc;
+  transform: scale(1.1);
+}
+
+.services {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 35px;
+  color: #bb86fc;
+}
+
+.services-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.service-card {
+  background-color: #1f1b24;
+  border-radius: 8px;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  width: 800px;
+}
+
+.service-card:hover {
+  box-shadow: 1px 8px 20px black;
+}
+
+.service-card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.service-info {
+  padding: 20px;
+}
+
+.service-info h3 {
+  font-size: 25px;
+  color: #bb86fc;
+}
+
+.service-info p {
+  font-size: 20px;
+  color: #e0e0e0;
+}
+
+.footer {
+  background-color: #1f1b24;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer a {
+  color: #bb86fc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  color: #cc00d3;
+}
+
+.form-container {
+  background-color: #1f1b24;
+  color: #ffffff;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+.form-group input,
+.form-group textarea {
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #121212;
+  transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border: #cc00d3 solid 1px;
+  outline: none;
+}
+
+.submit-button {
+  background-color: #bb86fc;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background-color: #cc00d3;
+}
+
+.about-us {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+}
+
+.about-us h1 {
+  font-size: 35px;
+  color: #bb86fc;
+}
+
+.about-us p {
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.team {
+  margin-bottom: 40px;
+}
+
+.team h2 {
+  font-size: 35px;
+  color: #bb86fc;
+  margin-bottom: 20px;
+}
+
+.team-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.team-member {
+  background-color: #1f1b24;
+  border-radius: 8px;
+  width: 400px;
+  padding: 20px;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.team-member:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.team-member h3 {
+  font-size: 20px;
+  color: #bb86fc;
+}
+
+.team-member p {
+  font-size: 17px;
+  color: #e0e0e0;
+}
+
+.values {
+  text-align: center;
+}
+
+.values h2 {
+  font-size: 40px;
+  color: #bb86fc;
+  margin-bottom: 20px;
+}
+
+.values ul {
+  list-style: none;
+}
+
+.values li {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #e0e0e0;
+}
+
+.gallery {
+  padding: 40px 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.gallery h1 {
+  font-size: 50px;
+  color: #bb86fc;
+}
+
+.gallery p {
+  font-size: 20px;
+  margin: 20px;
+  color: #e0e0e0;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  box-shadow: 1px 4px 10px black;
+  transition: 0.3s;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+  border-radius: 5%;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 8px 20px black;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  .main-nav.responsive,
+  .main-nav.responsive:before,
+  .main-nav.responsive:after {
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    background-color: #1f1b24;
+    width: 100%;
+    top: 60px;
+    left: 0px;
+    padding: 10px;
+  }
+  .hamburger {
+    display: inline;
+  }
+  .main-nav {
+    display: none;
+  }
+  .slide-container {
+    height: 300px;
+  }
+
+  .slide {
+    height: 300px;
+  }
+
+  .services-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .service-card {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .about-us h1,
+  .team h2,
+  .gallery h1,
+  .values h2 {
+    font-size: 28px;
+  }
+
+  .about-us p,
+  .service-info p,
+  .team-member p,
+  .gallery p,
+  .values li {
+    font-size: 16px;
+  }
+
+  .team-flex {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .team-member {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}

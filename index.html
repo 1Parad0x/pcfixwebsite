@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Main</title>
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="nav">
+      <a class="logo-container" href="index.html">
+        <img class="logo" src="img/logo.png" />
+      </a>
+      <div class="nav-buttons">
+        <div class="main-nav">
+          <a href="kontakt.html">
+            <button class="nav-button">Kontakt</button>
+          </a>
+          <a href="onas.html">
+            <button class="nav-button">O nás</button>
+          </a>
+          <a href="galeria.html">
+            <button class="nav-button">Galéria</button>
+          </a>
+        </div>
+        <a class="hamburger" id="hamburger">
+          <i>&#9776;</i>
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="slide-container">
+        <div class="slide">
+          <img class="slide-image" src="img/slider/1.jpeg" />
+          <div class="slide-text">Nefunguje pk?</div>
+        </div>
+
+        <div class="slide">
+          <img class="slide-image" src="img/slider/2.jpeg" />
+          <div class="slide-text">Neviete, ako ho opraviť?</div>
+        </div>
+
+        <div class="slide">
+          <img class="slide-image" src="img/slider/3.jpeg" />
+          <div class="slide-text">Prišli ste na správne miesto</div>
+        </div>
+
+        <a class="prev" id="prev">❮</a>
+        <a class="next" id="next">❯</a>
+      </section>
+
+      <section class="services">
+        <h2>Zoznam služieb</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <img alt="Услуга 1" src="img/projects/12.jpeg" />
+            <div class="service-info">
+              <h3>Oprava počítačov</h3>
+              <p>Kvalitná oprava akejkoľvek zložitosti.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <img alt="Услуга 2" src="img/projects/13.jpeg" />
+            <div class="service-info">
+              <h3>Prispôsobenie softvéru</h3>
+              <p>Pomôžem vám nastaviť akýkoľvek softvér.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <p>
+          Mail so žiadosťou o pomoc:
+          <a class="email" href="mailto:support@ukf.sk">support@ukf.sk</a>
+        </p>
+        <p>
+          Alebo navštívte stránku s
+          <a class="kontakti" href="kontakt.html">Kontaktmi</a>
+        </p>
+        <p>Vytvoril: Vladyslav Chornoivan</p>
+      </div>
+    </footer>
+    <script src="js/hamburger.js"></script>
+    <script src="js/slider.js"></script>
+  </body>
+</html>
